@@ -1,0 +1,43 @@
+{
+  "name": "pino-open-watch-transport",
+  "version": "1.1.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designo-group/pino-open-watch-transport.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designo-group/pino-open-watch-transport/issues"
+  },
+  "homepage": "https://github.com/designo-group/pino-open-watch-transport#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "p-throttle": "^7.0.0",
+    "pino": "^9.7.0",
+    "pino-abstract-transport": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "@types/node-fetch": "^2.6.12",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}

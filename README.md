@@ -54,7 +54,7 @@ import 'dotenv/config';
 import pino from "pino";
 
 const transport = pino.transport({
-    target: 'pino-open-watch-transport',
+    target: '@designo/pino-open-watch-transport',
     options: {
         logGroupName: 'pino-open-watch-test',
         logStreamName: 'pino-open-watch-test-stream',
@@ -78,7 +78,7 @@ import { request } from 'undici';
 import pino from 'pino';
 
 const transport = pino.transport({
-    target: '@serdnam/pino-open-watch-transport',
+    target: '@designo/pino-open-watch-transport',
     options: {
         logGroupName: 'pino-open-watch-test',
         logStreamName: 'pino-open-watch-test-stream',

@@ -1,6 +1,6 @@
 # @designo/pino-open-watch-transport
 
-Pino v7+ transport for sending logs to Designø ØpenWatch Logs, built using [pino-abstract-transport](https://github.com/pinojs/pino-abstract-transport)
+Pino v7+ transport for sending logs to **Øpen Watch** Logs, built using [pino-abstract-transport](https://github.com/pinojs/pino-abstract-transport)
 
 ## Install
 

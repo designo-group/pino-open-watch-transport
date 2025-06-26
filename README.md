@@ -33,6 +33,7 @@ After initializing the transport will start receiving logs from Pino formatting 
 }
 ```
 
+<!--
 The transport will use the `time` property of the received log as the `timestamp` if it finds it, otherwise, it will use `Date.now()`.
 
 The transport will store received logs in a buffer, and will flush them out to CloudWatch using a `PutLogEvents` call when one of the following conditions is met:
@@ -42,7 +43,7 @@ The transport will store received logs in a buffer, and will flush them out to C
 * The number of logs in the buffer has reached the size limit of 10,000 logs as described in the AWS CloudWatch documentation.
 
 * The transport has just received a log, and the last time a log has been stored before this one was longer than `interval` miliseconds.
-
+-->
 
 ## Usage
 
